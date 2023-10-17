@@ -1,130 +1,118 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Mojo dojo casa house</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
-        .container {
-          position: relative;
-          margin: 5px;
-          box-sizing: border-box;
-          text-align: center;
-          width: 30%;
-          display: inline-block;
+      .container {
+        position: relative;
+        margin: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 47%;
+        display: inline-block;
+      }
 
-        }
-        
-        .image {
-          display: block;
-          width: 100%;
-          height: auto;
-        }
-        
-        .image:hover {
-            transform: scaleX(-1);
-            opacity:0%;
-            transition: .5s ease;
-        }
-        
-        .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          opacity: 0;
-          transition: 1s ease;
-          background-color: #008CBA;
-        }
-        
-        .container:hover .overlay {
-          opacity: 1;
-        }
-        
-        .text {
-          color: white;
-          font-size: 100%;
-          position: absolute;
-          text-align: center;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-        }
+      .container:hover .overlay {
+        opacity: 1;
+      }
 
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        </style>
+      .text {
+        color: white;
+        font-size: 180%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
-</head>
 
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <img src="sprites_imgs/83705904.jfif" alt="My logo" class="headerLogo">
-                mamalakic
-            </a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="playground.html">Web Design Playground</a></li>
-          </ul>
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default nav-background">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="sprites_imgs/83705904.jfif"
+              alt="My logo"
+              class="headerLogo"
+            />
+            <div style="font-size: 3rem">mamalakic</div>
+          </a>
         </div>
-      </nav>
-
-      
-      <!-- 
-          On hover, make it glow.
-          Make box smaller
-          Make a glow follow cursor
-        -->
-        <div class="center">
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    
-                </div>
-                <div class="col-sm-6">
-            <h3>
-                Some of my projectssssssssssssssssssss
-            </h3>
-          <div class="container">
-              <img src="sprites_imgs/obama 2.png" alt="Obama" class="image">
-              <a href="https://github.com/mamalakic/opencv_filters">
-                  <div class="overlay">
-                  <div class="text">Live filters using openCV</div>
-                  </div>
-              </a>
-            </div>
-      
-            <div class="container">
-              <a href="https://github.com/mamalakic/grcpc_2023">
-              <img src="sprites_imgs/cropped-GRCPC-logo-1-1.png" alt="GRCPC" class="image">
-                  <div class="overlay">
-                  <div class="text">GRCPC 2023 solutions</div>
-                  </div>
-              </a>
-            </div>
-          </div>
+        <ul class="nav navbar-nav">
+          <li><a href="playground.html">Web Design Playground</a></li>
+        </ul>
       </div>
+    </nav>
+    <!-- 
+On hover, make it glow.
+Make box smaller
+Make a glow follow cursor
+-->
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="boxcolor">
+          <h2 style="text-align: center;">Biography</h2>
+
+        <h2 style="margin-left: 5%">
+          Under-graduate student at the <a href="https://www.ceid.upatras.gr/en"> Computer Engineering and Informatics
+          Department <img src="sprites_imgs/ceid.png" class="embedded"></a> of Patras, Greece with a grade of 7.5.
+        </h2>
+      </div>
+        <br><br>
+        <h2 style="text-align: center;">Skills</h2>
+        <ul style="margin-left: 5%;">
+          <li>C, CPP, Java, ASM, mySQL</li>
+          <li>Sound design</li>
+          <li>Video and photo editing</li>
+          <li>Web Design (Current page layout indicative of my abilities)</li>
+        </ul>
+      
+      
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="boxcolor">
+        <h2 style="text-align: center;">Examples of personal projects</h2>
+        <div class="container">
+          <img src="sprites_imgs/obama.png" alt="Obama" class="image" />
+          <a href="https://github.com/mamalakic/opencv_filters">
+            <div class="overlay">
+              <div class="text">Live filters using openCV</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <a href="https://github.com/mamalakic/grcpc_2023">
+            <img src="sprites_imgs/GRCPC.png" alt="GRCPC" class="image"/>
+            <div class="overlay">
+              <div class="text">GRCPC 2023 solutions</div>
+            </div>
+          </a>
+        </div>
+      </div>
+        <br>
       <div>
-
+        <p>Contact me</p>
+      </div>
     </div>
     </div>
-  </div>
-
-
-</body> 
-
+  </body>
 </html>
