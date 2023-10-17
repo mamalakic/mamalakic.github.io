@@ -1,0 +1,39 @@
+body {
+    background-image: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.headerLogo {
+    width: 40px;
+    height: 40px;
+    margin-left: -16px;
+    margin-right: 5px;
+    margin-top: -10px;
+    border-radius: 15px;
+}
+
+/* Updated styling for polaroid */
+div.polaroid {
+    display: inline-block; /* Display elements side by side */
+    margin: 10px; /* Adjust margin as needed */
+    background-color: white;
+    width: 40%; /* Adjust the width as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; /* Center text in the polaroid */
+}
+
+div.container {
+    padding: 5px 10px;
+    
+}
+
+.center {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
