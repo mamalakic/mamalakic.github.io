@@ -1,3 +1,19 @@
+html * {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    color: var(--accent)
+}
+
+.text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-spacing: 0em;
+}
+
 body {
     /* background-image: linear-gradient(#e66465, #9198e5); */
     background-image: url("sprites_imgs/animated_bg.gif");
@@ -24,20 +40,22 @@ body {
     margin: 2%;
 }
 
-.center {
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+.overlay {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: var(--accent);
+    border-radius: 15px;
+    padding: 0px 0px;
 }
 
 :root {
     --accent: rgb(153, 119, 210);
-}
-
-html * {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-    color: var(--accent)
 }
 
 .container {
@@ -50,11 +68,11 @@ html * {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 li {
-font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .nav-background {
@@ -67,35 +85,14 @@ background-image: url("sprites_imgs/steam\ gif.gif");
     height: auto;
 }
 
-.image:hover {
+/* .image:hover {
     transform: scaleX(-1);
     opacity: 0%;
     transition: 0.5s ease;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    transition: 1s ease;
-    background-color: var(--accent)
-}
+} */
 
 .container:hover .overlay {
     opacity: 1;
-}
-
-.text {
-    color: white;
-    font-size: 100%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .center {
@@ -120,9 +117,3 @@ background-image: url("sprites_imgs/steam\ gif.gif");
 .embedded {
     height: 2em;
 }
-
-div.container {
-    padding: 5px 10px;
-}
-
-
