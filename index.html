@@ -1,109 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mojo dojo casa house</title>
+    <title>mamalakic - Software Engineer & Creative Developer</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio of mamalakic - Computer Engineering student" />
+    <meta name="keywords" content="software engineer, computer engineering, web design, opencv, multimedia" />
+    <meta name="author" content="mamalakic" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    
+    <!-- Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <style>
-    .container {
-      position: relative;
-      margin: 7px;
-      box-sizing: border-box;
-      text-align: center;
-      width: 47%;
-      display: inline-block;
-      border-radius: 15px;
-    }
-    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-default nav-background">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="index.html">
-            <img
-              src="sprites_imgs/83705904.jfif"
-              alt="My logo"
-              class="headerLogo"
-            />
-            <div style="font-size: 3rem">mamalakic</div>
+            <img src="sprites_imgs/83705904.jfif" alt="mamalakic logo" class="headerLogo" />
+            <span>mamalakic</span>
           </a>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="playground.html">Web Design Playground</a></li>
-        </ul>
+        
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="playground.html">Playground</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!-- 
-On hover, make it glow.
-Make box smaller
-Make a glow follow cursor
--->
 
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="boxcolor">
-          <br />
-          <h2 style="text-align: center">Biography</h2>
+    <!-- Main Content -->
+    <main class="container-fluid">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-sm-6">
+          <!-- About Section -->
+          <section id="about" class="boxcolor">
+            <h2>About Me</h2>
+            <p class="lead">
+              Undergraduate student at the 
+              <a href="https://www.ceid.upatras.gr/en" target="_blank" rel="noopener">
+                Computer Engineering and Informatics Department
+                <img src="sprites_imgs/ceid.png" alt="CEID" class="embedded" />
+              </a>
+              of Patras, Greece with a grade of 8.
+              <br>
+              My thesis was about sample-free synthetic population generation for the region of Achaea, Greece.
+            </p>
 
-          <h2 style="margin: 5%">
-            Under-graduate student at the
-            <a href="https://www.ceid.upatras.gr/en">
-              Computer Engineering and Informatics Department
-              <img src="sprites_imgs/ceid.png" class="embedded"
-            /></a>
-            of Patras, Greece with a grade of 7.5.
-          </h2>
-        </div>
-        <br />
-        <h2 style="text-align: center">Skills</h2>
-        <ul style="margin: 5%">
-          <li>C, CPP, Java, ASM, mySQL</li>
-          <li>Sound design</li>
-          <li>Video and photo editing</li>
-          <li>Web Design (Current page layout indicative of my abilities)</li>
-        </ul>
-        <br />
-      </div>
+          </section>
 
-      <div class="col-sm-6">
-        <div class="boxcolor">
-          <br />
-          <h2 style="text-align: center">Examples of personal projects</h2>
-          <div class="container">
-            <img src="sprites_imgs/obama.png" alt="Obama" class="image" />
-            <a href="https://github.com/mamalakic/opencv_filters">
-              <div class="overlay">
-                <div class="text">Live filters using openCV</div>
+          <!-- Skills Section -->
+          <section id="skills" class="boxcolor">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Programming experience</h4>
+                <ul>
+                  <li>Low-level programming (C, C++, Java)</li>
+                  <li>Data science (Pandas, Numpy)</li>
+                  <li>Assembly</li>
+                  <li>Webdev (Nodejs, Nextjs)</li>
+                </ul>
               </div>
-            </a>
-          </div>
-
-          <div class="container">
-            <a href="https://github.com/mamalakic/grcpc_2023">
-              <img src="sprites_imgs/GRCPC.png" alt="GRCPC" class="image" />
-              <div class="overlay">
-                <div class="text">GRCPC 2023 solutions</div>
+              
+              <div class="skill-category">
+                <h4>Creative & Multimedia</h4>
+                <ul>
+                  <li>Sound Design</li>
+                  <li>Video & Photo Editing</li>
+                </ul>
               </div>
-            </a>
-          </div>
+            </div>
+          </section>
         </div>
-        <br />
-        <div>
-          <br /><br /><br />
-          <!-- This goes with boxoverlay for some reason -->
-          <p>Contact me</p>
+
+        <!-- Right Column -->
+        <div class="col-sm-6">
+          <!-- Projects Section -->
+          <section id="projects" class="boxcolor">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+              <div class="container">
+                <img src="sprites_imgs/obama.png" alt="OpenCV Filters Project" class="image" />
+                <a href="https://github.com/mamalakic/opencv_filters" target="_blank" rel="noopener">
+                  <div class="overlay">
+                    <div class="text">
+                      <h1>Live Filters</h1>
+                      <h4>Real-time image processing using OpenCV</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="container">
+                <img src="sprites_imgs/GRCPC.png" alt="GRCPC 2023 Solutions" class="image" />
+                <a href="https://github.com/mamalakic/grcpc_2023" target="_blank" rel="noopener">
+                  <div class="overlay">
+                    <div class="text">
+                      <h1>GRCPC 2023</h1>
+                      <h4>Competitive programming solutions</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+
         </div>
       </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center" style="padding: 2rem 0; color: var(--text-secondary);">
+    </footer>
   </body>
 </html>
