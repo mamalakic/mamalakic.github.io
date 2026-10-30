@@ -8,24 +8,19 @@
     <meta name="keywords" content="software engineer, computer engineering, web design, opencv, multimedia" />
     <meta name="author" content="mamalakic" />
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     
-    <!-- Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -46,34 +41,30 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="playground.html">Playground</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="container-fluid">
       <div class="row">
-        <!-- Left Column -->
-        <div class="col-sm-6">
-          <!-- About Section -->
+        <div class="col-sm-7">
           <section id="about" class="boxcolor">
             <h2>About Me</h2>
-            <p class="lead">
-              Undergraduate student at the 
+            <p>
+              MEng graduate in Computer Engineering and Informatics at the 
               <a href="https://www.ceid.upatras.gr/en" target="_blank" rel="noopener">
-                Computer Engineering and Informatics Department
+                University of Patras
                 <img src="sprites_imgs/ceid.png" alt="CEID" class="embedded" />
-              </a>
-              of Patras, Greece with a grade of 8.
+              </a>,
+              Greece, with a grade of 8.
               <br>
               My thesis was about sample-free synthetic population generation for the region of Achaea, Greece.
             </p>
-
           </section>
+        </div>
 
-          <!-- Skills Section -->
+        <div class="col-sm-5">
           <section id="skills" class="boxcolor">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
@@ -97,46 +88,68 @@
             </div>
           </section>
         </div>
+      </div>
 
-        <!-- Right Column -->
-        <div class="col-sm-6">
-          <!-- Projects Section -->
+      <div class="row">
+        <div class="col-sm-12">
           <section id="projects" class="boxcolor">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-              <div class="container">
-                <img src="sprites_imgs/obama.png" alt="OpenCV Filters Project" class="image" />
-                <a href="https://github.com/mamalakic/opencv_filters" target="_blank" rel="noopener">
-                  <div class="overlay">
-                    <div class="text">
-                      <h1>Live Filters</h1>
-                      <h4>Real-time image processing using OpenCV</h4>
+              <a class="project-card" href="https://github.com/mamalakic/opencv_filters" target="_blank" rel="noopener">
+                <div class="project-media">
+                  <img src="sprites_imgs/obama.png" alt="OpenCV face filters demo" />
+                  <div class="project-overlay">
+                    <div>
+                      <h3>Live Filters</h3>
+                      <p>OpenCV face recognition and Snapchat-style filters on photos and video.</p>
                     </div>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
 
-              <div class="container">
-                <img src="sprites_imgs/GRCPC.png" alt="GRCPC 2023 Solutions" class="image" />
-                <a href="https://github.com/mamalakic/grcpc_2023" target="_blank" rel="noopener">
-                  <div class="overlay">
-                    <div class="text">
-                      <h1>GRCPC 2023</h1>
-                      <h4>Competitive programming solutions</h4>
+              <a class="project-card" href="https://github.com/mamalakic/FinProjections" target="_blank" rel="noopener">
+                <div class="project-media">
+                  <img src="sprites_imgs/finprojections.png" alt="FinProjections budgeting dashboard" loading="lazy" />
+                  <div class="project-overlay">
+                    <div>
+                      <h3>FinProjections</h3>
+                      <p>Personal finance and budgeting web app built with Flask.</p>
                     </div>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
+
+              <a class="project-card" href="https://github.com/mamalakic/Tuya-Socket-Statistics" target="_blank" rel="noopener">
+                <div class="project-media">
+                  <img src="sprites_imgs/tuya-socket.png" alt="Tuya smart socket energy dashboard" loading="lazy" />
+                  <div class="project-overlay">
+                    <div>
+                      <h3>Socket Statistics</h3>
+                      <p>Smart-socket power analysis and statistics with a Flask front end.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a class="project-card" href="https://github.com/mamalakic/grcpc_2023" target="_blank" rel="noopener">
+                <div class="project-media is-logo">
+                  <img src="sprites_imgs/GRCPC.png" alt="GRCPC 2023 logo" loading="lazy" />
+                  <div class="project-overlay">
+                    <div>
+                      <h3>GRCPC 2023</h3>
+                      <p>Accepted C++ solutions from the Greek Collegiate Programming Contest.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </section>
-
-
         </div>
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center" style="padding: 2rem 0; color: var(--text-secondary);">
+    <footer class="site-footer">
+      <span>mamalakic</span>
     </footer>
   </body>
 </html>
